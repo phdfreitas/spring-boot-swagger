@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
@@ -18,6 +19,10 @@ public class User {
     private Long id;
     private String login;
     private String password;
+
+    //
+    private LocalDate createdAt;
+    private LocalDate updatedAt;
 
 
 
